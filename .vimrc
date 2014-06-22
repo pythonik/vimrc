@@ -6,6 +6,7 @@
 " author: Kun Su
 " version: 0.1.1
 
+" basic stuff...
 set number
 syntax on
 
@@ -27,11 +28,22 @@ set autoindent
 
 
 " mode switch
+"-------------------------------------
 " map ; to : in both normal mode and visual mode
 nnoremap ; :
 vnoremap ; :
 " map jj to esc in insert mode 
 inoremap jj <Esc>
 
-au BufWritePost .vimrc so ~/.vimrc
-    
+" IDE like auto complete
+"-------------------------------------
+" trigger by tab
+inoremap <Tab> <C-N>
+set completeopt=longest,menuone
+inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
+  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+au BufWritePost .vimrc so ~/.vimrc    
+
