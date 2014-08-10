@@ -1,8 +1,5 @@
-" minimalist's vimrc
-" writern with minimalism in mind
-" no plugins will ever needed, small yet convienent, portable vimbox
-" Perfect for restricted UNIX like environment
-" Perfect for new vim learners
+" newbee's vimrc
+" going forward with minimalism in mind
 " author: Kun Su
 " version: 0.1.1
 
@@ -38,7 +35,7 @@ inoremap jj <Esc>
 " IDE like auto complete
 "-------------------------------------
 " trigger by tab
-inoremap <Tab> <C-N>
+inoremap ` <C-N>
 set completeopt=longest,menuone
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
