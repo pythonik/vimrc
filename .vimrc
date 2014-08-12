@@ -32,9 +32,16 @@ vnoremap ; :
 " map jj to esc in insert mode 
 inoremap jj <Esc>
 
+" insert mode editing (emacs mode)
+inoremap <C-A> <Esc>^i
+inoremap <C-E> <Esc>$i
+inoremap <C-K> <Esc>d$i
+inoremap <C-U> <Esc>d0i
+inoremap <C-L> <Esc>o
+
 " IDE like auto complete
 "-------------------------------------
-" trigger by tab
+" trigger by `
 inoremap ` <C-N>
 set completeopt=longest,menuone
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
