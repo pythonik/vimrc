@@ -6,6 +6,7 @@
 " basic stuff...
 set number
 syntax on
+nnoremap <Enter> O<Esc>
 
 set hlsearch
 " map 33 to disable highlight
