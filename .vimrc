@@ -33,6 +33,9 @@ vnoremap ; :
 " map jj to esc in insert mode 
 inoremap jj <Esc>
 
+"fast saving
+inoremap xx <Esc>:x<Enter>
+
 " insert mode editing (emacs mode)
 inoremap <C-A> <Esc>^i
 inoremap <C-E> <Esc>$i
