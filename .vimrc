@@ -8,6 +8,9 @@ set number
 syntax on
 nnoremap <Enter> O<Esc>
 
+" comment color for human
+hi Comment ctermfg=LightBlue
+
 set hlsearch
 " map 33 to disable highlight
 nnoremap 33 :noh<CR> 
