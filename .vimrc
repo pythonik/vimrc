@@ -1,4 +1,4 @@
-" going forward with minimalism in mind
+" Going forward with minimalism in mind
 " author: Kun Su
 " version: 0.1.1
 
