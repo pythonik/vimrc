@@ -1,7 +1,3 @@
-" Going forward with minimalism in mind
-" author: Kun Su
-" version: 0.1.1
-
 " basic stuff...
 set number
 syntax on
